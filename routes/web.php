@@ -13,3 +13,7 @@ Route::get('/admin/masyarakat', [MasyarakatController::class, "index"]);
 Route::get('/admin/pengguna', [PenggunaController::class, "index"]);
 
 Route::get('/admin/laporan', [LaporanController::class, "index"]);
+
+use App\Http\Controllers\BootstrapController;
+
+Route::get('/bootstrap', [BootstrapController::class, 'index']);
